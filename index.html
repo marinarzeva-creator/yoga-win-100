@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Day Chair Yoga for Seniors - Gentle Seated Exercise Program</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        :root {
+            --primary-color: #2e6f40; /* Warm, healing green */
+            --primary-hover: #22522e;
+            --accent-color: #e76f51; /* High-conversion coral/orange */
+            --accent-hover: #d65d40;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7f9f6;
+            --card-bg: #ffffff;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
+
+        /* Header / Logo bar */
+        header {
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            margin-bottom: 24px;
+            border: 1px solid rgba(46, 111, 64, 0.08);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .subheading {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .product-image-container {
+            position: relative;
+            margin-bottom: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            padding: 18px 24px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(231, 111, 81, 0.35);
+            transition: all 0.2s ease;
+            margin-bottom: 12px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(231, 111, 81, 0.45);
+        }
+
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+
+        .sub-cta-text {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 28px 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            margin-bottom: 24px;
+            border: 1px solid rgba(46, 111, 64, 0.08);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .benefit-list {
+            list-style: none;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            color: var(--text-dark);
+        }
+
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .benefit-icon {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .benefit-text strong {
+            color: var(--primary-color);
+        }
+
+        /* Social Proof (Reviews) */
+        .reviews {
+            margin-bottom: 24px;
+        }
+
+        .review-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .review-stars {
+            color: #ffb703;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .review-author {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Trust & Urgency */
+        .trust-badge-container {
+            background: rgba(46, 111, 64, 0.05);
+            border: 1px dashed var(--primary-color);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .guarantee-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .guarantee-desc {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .urgency-badge {
+            background-color: #fee2e2;
+            color: #991b1b;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            text-align: center;
+            padding: 20px 0 40px 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            .subheading {
+                font-size: 1rem;
+            }
+            .cta-button {
+                font-size: 1.15rem;
+                padding: 16px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <div class="logo-text">Active Aging Club</div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Reclaim Your Mobility, Balance & Strength in Just 10 Minutes a Day!</h1>
+            <p class="subheading">The complete, step-by-step printable Chair Yoga guide designed specifically for seniors to relieve stiffness and stay active safely.</p>
+            
+            <div class="product-image-container">
+                <img src="https://public-files.gumroad.com/6wtbheq84fkr1t1cq3zb288zjb8y" class="product-image" alt="30-Day Chair Yoga for Seniors Program Guide">
+            </div>
+
+            <a href="https://sportify08.gumroad.com/l/30-day-chair-yoga-seniors" class="cta-button">
+                Get Instant Access Now
+            </a>
+            
+            <div class="sub-cta-text">
+                ⚡ Downloadable PDF • Print it at home • Keep it forever
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2 class="section-title">What You'll Achieve with This Program</h2>
+            <ul class="benefit-list">
+                <li class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span class="benefit-text"><strong>30-Day Step-by-Step Calendar:</strong> Zero guesswork. Follow a simple, daily routine designed to build real strength and confidence.</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span class="benefit-text"><strong>Gentle, Safe Movements:</strong> Designed specifically for senior bodies. Reduce joint pain and muscle stiffness from the security of a sturdy chair.</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span class="benefit-text"><strong>High-Quality Printable Design:</strong> Easy-to-read layout with large text and clear illustrations, perfect for printing and setting on your table.</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span class="benefit-text"><strong>Improve Balance & Flexibility:</strong> Crucial routines that help stabilize your core, directly decreasing the risk of accidental slips and falls.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="reviews">
+            <h2 class="section-title">Loved by Seniors Everywhere</h2>
+            
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"I was feeling so stiff and clumsy in the mornings. Just two weeks into this chair yoga routine, my knees feel looser and I can stand up so much easier. I printed it out and keep it right by my favorite chair!"</p>
+                <div class="review-author">— Margaret S., 68</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Outstanding and easy to follow. The illustrations make it very clear what to do. My lower back pain has significantly improved. Highly recommend for any senior looking to stay mobile."</p>
+                <div class="review-author">— Robert H., 72</div>
+            </div>
+        </section>
+
+        <!-- Trust & Urgency Section -->
+        <section class="trust-badge-container">
+            <span class="urgency-badge">⚠️ Limited-Time Offer</span>
+            <div class="guarantee-title">
+                🛡️ 30-Day Money-Back Guarantee
+            </div>
+            <p class="guarantee-desc">
+                Try the program risk-free. If you do not feel stronger, more balanced, and more energetic within 30 days, simply let us know for a full, hassle-free refund.
+            </p>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <a href="https://sportify08.gumroad.com/l/30-day-chair-yoga-seniors" class="cta-button">
+                Download Your Printable Program Now
+            </a>
+            <div class="sub-cta-text" style="margin-top: 8px;">
+                Secure Checkout via Gumroad
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
